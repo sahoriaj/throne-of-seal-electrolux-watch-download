@@ -1,0 +1,152 @@
+/* ====== ThumbGrabber - External CSS ====== */
+:root {
+  --bg: #f9f9f9;
+  --text: #222;
+  --header-bg: #fff;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding-top: 64px; /* Match header height */
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  background: var(--header-bg);
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 60px;
+  box-sizing: border-box;
+}
+
+.logo img {
+  height: 36px;
+  display: block;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Main */
+main {
+  padding: 28px 20px;
+  text-align: center;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+input[type=text] {
+  padding: 12px;
+  width: 80%;
+  max-width: 520px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px 20px;
+  margin-top: 12px;
+  background: #1a73e8;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0c63d4;
+}
+
+button.download {
+  background: #34a853;
+}
+
+button.download:hover {
+  background: #2c8d46;
+}
+
+/* Thumbnail section */
+.thumbnail-section {
+  margin-top: 26px;
+}
+
+.thumbnail-section img {
+  width: 100%;
+  max-width: 480px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* FAQ */
+.faq-section {
+  max-width: 880px;
+  margin: 36px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.06);
+}
+
+.faq-section h2 {
+  margin-bottom: 20px;
+}
+
+.faq-section details {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+.faq-section summary {
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.faq-section p,
+.faq-section ul {
+  margin-top: 10px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.faq-section ul {
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+/* Footer */
+footer {
+  padding: 18px;
+  text-align: center;
+  color: #666;
+  background: #f8f8f8;
+  border-top: 1px solid #ddd;
+  margin-top: 28px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .site-header {
+    padding: 6px 12px;
+  }
+  .logo img {
+    height: 32px;
+  }
+}
